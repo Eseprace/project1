@@ -21,46 +21,50 @@
   <style> 
   /* comment */
   * {
-    margin: 500;
-    padding: 500;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    background-color: gray;
-    color: black;
-    font-size: 30;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
-    
   }
     body {
-    <div style="background-color:yellow"><div/>
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:#CDD6DB;
+    padding: 10px 50px;
     }
     .container {
-    margin: 10px auto;
-    text-align: left;
-
+    /* margin: 10px auto; */
+    text-align: center;
     }
     input, button {
-    margin: 10px auto;
+    margin: 10px;
     width: 400px;
-
-
+    padding: 5px 10px;
+    height: 50px;
+    font-size: 20px;
+    }
+    button {
+      background-color: blue;
+    }
+    .radio {
+      width: 30px;
+      height: 30px;
     }
     </style>
     </head>
 
-    <body>
+    <body> 
+      
       <!-- comment -->
       <div class="container">
-        <div style="background-color:yellow">
-          <h1 style="color:blue">MEMBERSHIP REGISTRATION FORM</h1>
-          <div/>
-        The members of any kind of organization serve as its body. Become a member of our organization to develop both yourserf and the community.<br>
-        <h2 style=color:blue"> Your personal informantion.</h2>
-        <br> The field with asterik(*) is manadatory.<br>
-        NAME:<br>
-        <input type="text" placeholder="First Name*"> <br>
-        <input type="text" placeholder="Middle Name"> <br>
-        <input type="text" placeholder="Last Name*"><br>
+          <h1>MEMBERSHIP REGISTRATION FORM</h1>
+          <p>The members of any kind of organization serve as its body. Become a member of our organization to develop both yourserf and the community.</p> 
+          <form>
+        <h2>Your personal informantion.</h2>
+        <p> The field with asterik(*) is manadatory.</p>
+        NAME:
+        <input type="text" class="name" placeholder="First Name*"><br>
+        <input type="text" class="name" placeholder="Middle Name"><br>
+        <input type="text" class="name" placeholder="Last Name*"><br>
          Email address: <br>
         <input type="text" placeholder="Email Address*"> <br>
         phone number: <br>
@@ -72,34 +76,11 @@
         <input type="text" placeholder="Region*"> <br>
         <input type="text" placeholder="Postal/Zip Code*"><br>
         <input type="text" placeholder="Country*"><br>
-        I agreed the above information was filled me!
-        <form> 
-          <input type="radio" id="html" name="fav_language" value“HTML“> <br>
-          
+        <input type="radio" class="radio" id=“HTML“> I agreed the above information was filled by me!<br>
+        <input type="submit" value="Submit">
         </form>
-      
         
-        
-        
-        
-          <br>
-        <input type="submit"value="Submit"
-        
-        
-        
-        
-        
-        
-        
-  
-    
-    
-    
-</body>
-
-</html>
-
-
+    </div>
 </body>
 
 </html>
