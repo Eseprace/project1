@@ -4,19 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-</head>
-
-<body>
-
-
-
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> A Ristration form sample</title>
   <style> 
   /* comment */
@@ -49,6 +36,19 @@
       width: 30px;
       height: 30px;
     }
+    .name { 
+      width: 300px;
+    }
+    .address {
+      width: 200px;
+    }
+    .fill {
+      width: 60‰;
+      text-align: left;
+      margin: 10px auto;
+      /* background-color: red; */
+      padding: 10px;
+    }
     </style>
     </head>
 
@@ -61,23 +61,26 @@
           <form>
         <h2>Your personal informantion.</h2>
         <p> The field with asterik(*) is manadatory.</p>
-        NAME:
-        <input type="text" class="name" placeholder="First Name*"><br>
-        <input type="text" class="name" placeholder="Middle Name"><br>
-        <input type="text" class="name" placeholder="Last Name*"><br>
-         Email address: <br>
-        <input type="text" placeholder="Email Address*"> <br>
-        phone number: <br>
-        <input type="text" placeholder="#### #### #####*"><br>
-        Residential Address: <br>
-        <input type="text" placeholder="Street Address*"> <br>
-        <input type="text" placeholder="Street Address line 2"><br>
-        <input type="text" placeholder="City*"><br>
-        <input type="text" placeholder="Region*"> <br>
-        <input type="text" placeholder="Postal/Zip Code*"><br>
-        <input type="text" placeholder="Country*"><br>
-        <input type="radio" class="radio" id=“HTML“> I agreed the above information was filled by me!<br>
-        <input type="submit" value="Submit">
+        <div class="fill">
+        <p>NAME:
+        <input type="text" class="name" placeholder="First Name*" required> 
+        <input type="text" class="name" placeholder="Middle Name">
+        <input type="text" class="name" placeholder="Last Name*" required></p>
+        <p> Email address: 
+        <input type="text" placeholder="Email Address*" required></p>
+        <p>phone number: 
+        <input type="text" placeholder="#### #### #####*" required></p>
+        <p>Residential Address:
+        <input type="text" class="address" placeholder="Street Address*" required>
+        <input type="text" class="address" placeholder="Street Address line 2">
+        <input type="text" class="address" placeholder="Postal/Zip Code*">
+        <input type="text" class="address" placeholder="City*" required></p>
+        <p> <input type="text" placeholder="Region*" required>
+        <input type="text" placeholder="Country*" required></p>
+        <p> <input type="file" accept="image/png, image/jpeg"> </p>
+        <p><input type="radio" class="radio" id=“HTML“ required> I agreed the above information was filled by me!</p>
+        <input type="submit" value="Register">
+        </div>
         </form>
         
     </div>
